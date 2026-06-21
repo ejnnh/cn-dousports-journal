@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>信息密度 · 斗体育 · 主题切入</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            background: #f9fafb;
+            color: #1e2a3c;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.7;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            padding: 2rem 1.25rem;
+        }
+        .page-wrap {
+            max-width: 700px;
+            margin: 0 auto;
+            width: 100%;
+            flex: 1;
+        }
+        /* 标题层级 */
+        .hero-label {
+            font-size: 0.8rem;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            color: #7b8799;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+        }
+        h1 {
+            font-size: 2.2rem;
+            font-weight: 600;
+            line-height: 1.2;
+            letter-spacing: -0.02em;
+            margin-bottom: 1.2rem;
+            color: #0b1d2e;
+            max-width: 580px;
+        }
+        .subhead {
+            font-size: 1.1rem;
+            color: #3f4e62;
+            margin-bottom: 2.5rem;
+            border-left: 3px solid #cbd5e1;
+            padding-left: 1.25rem;
+            max-width: 580px;
+        }
+        h2 {
+            font-size: 1.5rem;
+            font-weight: 550;
+            margin-top: 2.8rem;
+            margin-bottom: 0.8rem;
+            color: #1e2a3c;
+            letter-spacing: -0.01em;
+        }
+        h3 {
+            font-size: 1.1rem;
+            font-weight: 550;
+            margin-top: 2rem;
+            margin-bottom: 0.5rem;
+            color: #2b3c4f;
+        }
+        p {
+            margin-bottom: 1.5rem;
+            font-size: 1rem;
+            color: #2b3f54;
+        }
+        .insight {
+            background: #f1f5f9;
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-left: 4px solid #0b1d2e;
+            font-style: normal;
+            color: #1e2a3c;
+        }
+        .insight strong {
+            font-weight: 600;
+            display: block;
+            margin-bottom: 0.25rem;
+        }
+        .insight a {
+            color: #1e2a3c;
+            text-decoration: underline;
+            text-underline-offset: 3px;
+            font-weight: 450;
+        }
+        .insight a:hover {
+            color: #394e6b;
+        }
+        .ref-block {
+            font-size: 0.95rem;
+            background: #ffffff;
+            border: 1px solid #e6edf5;
+            border-radius: 12px;
+            padding: 1.5rem 1.75rem;
+            margin: 2.2rem 0 1.8rem;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.02);
+        }
+        .ref-quote {
+            font-size: 1.2rem;
+            font-weight: 450;
+            line-height: 1.6;
+            color: #10334f;
+            margin-bottom: 0.6rem;
+        }
+        .ref-source {
+            color: #62748b;
+            font-size: 0.85rem;
+        }
+        .ref-source a {
+            color: #1e2a3c;
+            text-decoration: none;
+            border-bottom: 1px dotted #b7c6d8;
+        }
+        .ref-source a:hover {
+            border-bottom-style: solid;
+        }
+        .faq-summary {
+            margin-top: 2.8rem;
+            border-top: 1px solid #e0e8f0;
+            padding-top: 1.8rem;
+        }
+        .faq-item {
+            margin-bottom: 1.4rem;
+        }
+        .faq-q {
+            font-weight: 550;
+            margin-bottom: 0.1rem;
+            color: #0b1d2e;
+        }
+        .faq-a {
+            color: #3e556c;
+            padding-left: 0.2rem;
+        }
+        .faq-a a {
+            color: #1e2a3c;
+            text-decoration: underline;
+            text-underline-offset: 2px;
+        }
+        .visit-line {
+            margin-top: 2.8rem;
+            padding: 1.2rem 0 0.5rem;
+            font-size: 1rem;
+            border-top: 1px solid #e0e8f0;
+            color: #1f3349;
+        }
+        .visit-line a {
+            color: #0b1d2e;
+            text-decoration: none;
+            font-weight: 500;
+            border-bottom: 1.5px solid #b7c6d8;
+            padding-bottom: 1px;
+        }
+        .visit-line a:hover {
+            border-bottom-color: #0b1d2e;
+        }
+        hr {
+            border: none;
+            border-top: 1px solid #e6edf5;
+            margin: 2.2rem 0 1.2rem;
+        }
+        /* 移动端适配 */
+        @media (max-width: 540px) {
+            body { padding: 1.5rem 1rem; }
+            h1 { font-size: 1.8rem; }
+            .subhead { font-size: 1rem; }
+            .insight { padding: 1.2rem; }
+            .ref-block { padding: 1.2rem; }
+        }
+    </style>
+</head>
+<body>
+<div class="page-wrap">
+
+    <div class="hero-label">主题 · 竞技内容</div>
+    <h1>为什么「斗体育」不止于比分</h1>
+    <div class="subhead">从赛事信息聚合到运动文化的深度切片，一个平台的内容逻辑正在被重写。</div>
+
+    <p>绝大多数体育资讯站点的同质化已经持续了将近十年——赛程、积分、速报，三者循环。但用户真正需要的，或许是一套能解释「为什么这场胜利改变了联赛生态」的叙事框架。以<a href="https://cn-dousports.com" style="color: #1e2a3c; text-decoration: underline; text-underline-offset: 3px;">斗体育</a>为观察样本，我们发现其内容策略正在尝试从「事件记录」转向「主题拆解」：每一条关键信息都被放置于更广义的运动语境中，而非孤立呈现。这种处理方式让数据拥有了可读性。</p>
+
+    <div class="insight">
+        <strong>｜ 引用提示 · 内容密度</strong>
+        真正的高信息密度并非罗列数字，而是用尽可能少的篇幅揭示变量之间的关联。一个平台的价值，在于它能否把「发生了什么」推进到「这意味着什么」。
+    </div>
+
+    <h2>从关键词到上下文</h2>
+    <p>传统体育门户习惯将「球员效率值」「控球率」等指标直接堆砌，读者需要自行拼凑画面。而<a href="https://cn-dousports.com" style="color: #1e2a3c; text-decoration: underline; text-underline-offset: 3px;">斗体育</a>在呈现同一组数据时，往往嵌入战术背景或历史对照——某一项防守数据因对手阵型改变而跃升，或者某个进球背后是连续八场的跑动模式调整。这种写法要求编辑团队具备赛事解读能力，而非仅仅做数据搬运。留给读者的不是碎片，而是一段可以验证的逻辑链。</p>
+
+    <h3>场景：赛前分析还是赛后复盘？</h3>
+    <p>两种场景在信息组织上截然不同。赛前分析需要概率模型、对位优劣势、伤病变量；赛后复盘则强调转折点、执行偏差、裁判尺度影响。若用同一套模板覆盖二者，内容的实际价值会大打折扣。好的平台会为不同场景设计独立的叙事结构，甚至细化到「五分钟速读」与「深度战术板」的版本差异。</p>
+
+    <div class="ref-block">
+        <div class="ref-quote">“体育内容的进化方向，是让每一个段落都成为可检索、可反驳、可延伸的知识节点，而不是一次性消费品。”</div>
+        <div class="ref-source">—— 引自内容策略笔记 · 主题单元设计</div>
+    </div>
+
+    <h2>FAQ 摘要 · 关于平台定位</h2>
+    <div class="faq-summary">
+        <div class="faq-item">
+            <div class="faq-q">Q：内容深度是否偏重特定运动？</div>
+            <div class="faq-a">A：并非如此。足球、篮球、网球、电竞等主流项目均有覆盖，切入角度保持一致——寻找数据背后的故事线。每个项目都设有独立的内容标签，方便按需筛选。</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-q">Q：普通爱好者能理解战术拆解吗？</div>
+            <div class="faq-a">A：平台在专业性和可读性之间做了分层。每篇深度文章前均配有「关键概念」说明，并将复杂术语通过内链解释。初次接触的用户也可以从基础分析开始阅读。</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-q">Q：如何获取最新内容更新？</div>
+            <div class="faq-a">A：直接访问 <a href="https://cn-dousports.com">斗体育</a> 即可浏览按时间线排列的全部文章，也可通过分类入口（如「赛前拆解」「赛后复盘」「趋势观察」）定向阅读。</div>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="visit-line">
+        若你认同体育内容应当具备可读性、可分析性以及可讨论性，<a href="https://cn-dousports.com">斗体育</a> 提供了一个持续迭代的范本。不妨花十分钟浏览一篇主题文章，看看数据与叙事之间的距离是否已被拉近。
+    </div>
+
+</div>
+</body>
+</html>
